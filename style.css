@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#gba-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/pikachugba.w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+#quiz-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+h1.quiz-title {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.gameboy-screen {
+    position: absolute;
+    top: 12%;
+    left: 38%;
+    width: 22%;
+    height: 43%;
+    background-color: #D0F8F8; /* Light blue color similar to Gameboy Color screen */
+    border: 8px solid #000000; /* Black border */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow effect */
+    padding: 10px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
